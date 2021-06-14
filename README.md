@@ -44,11 +44,7 @@ $HADOOP_HOME/bin/hdfs dfs -cat input
 - Para realizar o job de mapper e reducer execute a seguinte comando:
 
 ```shell 
-$HADOOP_HOME/bin/mapred streaming -files mapper.py,reducer.py \ 
--mapper mapper.py \ 
--reducer reducer.py \ 
--input /user/hadoop/input \ 
--output /user/hadoop/output 
+$HADOOP_HOME/bin/mapred streaming -files mapper.py,reducer.py -mapper mapper.py -reducer reducer.py -input /user/hadoop/input -output /user/hadoop/output 
 ``` 
 
 - Para realizar o download da saída do Mapreduce
