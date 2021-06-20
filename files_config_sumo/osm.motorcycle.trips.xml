@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-05-26 08:21:49 by Eclipse SUMO duarouter Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/diego/Sumo/2021-05-26-08-21-39/osm.net.xml"/>
+        <route-files value="/home/diego/Sumo/2021-05-26-08-21-39/osm.motorcycle.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/diego/Sumo/2021-05-26-08-21-39/osm.motorcycle.trips.xml.tmp"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="60"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="moto_motorcycle" vClass="motorcycle"/>
+    <trip id="moto0" type="moto_motorcycle" depart="0.00" departLane="best" from="-205860388#3" to="-169923316#0"/>
+    <trip id="moto1" type="moto_motorcycle" depart="6.73" departLane="best" from="169923329#1" to="169923248#0"/>
+    <trip id="moto2" type="moto_motorcycle" depart="13.47" departLane="best" from="380091877#2" to="-154297409"/>
+    <trip id="moto3" type="moto_motorcycle" depart="20.20" departLane="best" departSpeed="max" from="152907232#0" to="-152907324#1"/>
+    <trip id="moto4" type="moto_motorcycle" depart="26.94" departLane="best" from="-169923322#2" to="152907402#2"/>
+    <trip id="moto5" type="moto_motorcycle" depart="33.67" departLane="best" from="169923246#3" to="154295978#2"/>
+    <trip id="moto6" type="moto_motorcycle" depart="40.41" departLane="best" from="-169923323" to="154979233#0"/>
+    <trip id="moto7" type="moto_motorcycle" depart="47.14" departLane="best" from="225052896#0" to="169923266#1"/>
+    <trip id="moto8" type="moto_motorcycle" depart="53.88" departLane="best" from="-380698881#4" to="-154979262#2"/>
+</routes>

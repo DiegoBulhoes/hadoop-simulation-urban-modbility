@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-05-26 08:21:48 by Eclipse SUMO duarouter Version 1.9.2
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/diego/Sumo/2021-05-26-08-21-39/osm.net.xml"/>
+        <route-files value="/home/diego/Sumo/2021-05-26-08-21-39/osm.bus.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/diego/Sumo/2021-05-26-08-21-39/osm.bus.trips.xml.tmp"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="60"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus_bus" vClass="bus"/>
+    <trip id="bus0" type="bus_bus" depart="0.00" departLane="best" from="169923246#1" to="-152907313#1"/>
+    <trip id="bus2" type="bus_bus" depart="13.47" departLane="best" from="-169923323" to="152907345#0"/>
+    <trip id="bus3" type="bus_bus" depart="20.20" departLane="best" from="-152907293#0" to="-155035507#1"/>
+    <trip id="bus4" type="bus_bus" depart="26.94" departLane="best" from="225052910#3" to="-152907232#0"/>
+    <trip id="bus5" type="bus_bus" depart="33.67" departLane="best" from="225052910#1" to="169923249#4"/>
+    <trip id="bus6" type="bus_bus" depart="40.41" departLane="best" from="380698887#5" to="-247366415#0"/>
+    <trip id="bus7" type="bus_bus" depart="47.14" departLane="best" from="-154300830#3" to="-154297413"/>
+    <trip id="bus8" type="bus_bus" depart="53.88" departLane="best" departSpeed="max" from="247366426" to="154979245"/>
+</routes>
