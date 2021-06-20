@@ -28,5 +28,5 @@ for line in sys.stdin:
     dict_processed_input = remove(dict_input)
     data = list(dict_processed_input.values())
     vehicle = ['moto_motorcycle', 'bus_bus', 'veh_passenger', 'truck_truck']
-    if data[1] != "" and dict_processed_input['vehicle_type'] in vehicle:
+    if data[1] != "0.00" and dict_processed_input['vehicle_type'] in vehicle:
         print('{};{}'.format(dict_processed_input['vehicle_type'], ';'.join(data).replace('\n', '')))
