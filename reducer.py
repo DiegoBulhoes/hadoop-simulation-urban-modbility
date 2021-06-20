@@ -1,20 +1,42 @@
 #!/usr/bin/python3
 # -*-coding:utf-8 -*
 import sys
+from operator import add
 
-currently_word = None
-currently_count = 0
+currently_vehicle = None
+currently_data = list(0 for i in range(10))
+currently_data_min = list((float('inf')) for i in range(10))
+currently_data_max = list((float('-inf')) for i in range(10))
+
+qtd = 0
+max = (float('-inf'))
+min = (float('inf'))
+
+
+def output_reducer(currently_data, currently_vehicle, currently_data_max, currently_data_min, mean):
+    str_currently_data = ';'.join(map(str, currently_data))
+    str_currently_data_max = ';'.join(map(str, currently_data_max))
+    str_currently_data_min = ';'.join(map(str, currently_data_min))
+    str_mean = ';'.join(map(str, mean))
+    return f'{currently_vehicle};{str_currently_data};{str_currently_data_max};{str_currently_data_min};{str_mean}'
+
 
 for line in sys.stdin:
-    word, count = line.split('\t')
-    count = int(count)
-    if word == currently_word:
-        currently_count += count
+    input = line.replace('\n', '').split(';')
+    data = [float(i) for i in input[2:-1]]
+    vehicle_name = input[-1]
+    if vehicle_name == currently_vehicle:
+        currently_data = list(map(add, currently_data, data))
+        currently_data_max = [l1 if l1 > l2 else l2 for l1, l2 in zip(currently_data_max, data)]
+        currently_data_min = [l1 if l1 < l2 else l2 for l1, l2 in zip(currently_data_min, data)]
+        qtd += 1
     else:
-        if currently_word:
-            print('{0};{1}'.format(currently_word, currently_count))
-        currently_word = word
-        currently_count = count
+        if currently_vehicle:
+            mean = list(map(lambda x: x / qtd, currently_data))
+            print(output_reducer(currently_data, currently_vehicle, currently_data_max, currently_data_min, mean))
+        currently_vehicle = vehicle_name
+        currently_data = data
 
-if currently_word == word:
-    print('{0};{1}'.format(currently_word, currently_count))
+if currently_vehicle == vehicle_name:
+    mean = list(map(lambda x: x / qtd, currently_data))
+    print(output_reducer(currently_data, currently_vehicle, currently_data_max, currently_data_min, mean))
