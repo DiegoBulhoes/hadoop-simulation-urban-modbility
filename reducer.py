@@ -25,8 +25,8 @@ for line in sys.stdin:
     vehicle_name = input[-1]
     if vehicle_name == currently_vehicle:
         currently_data = list(map(add, currently_data, data))
-        currently_data_max = [n if n < m else m for n, m in zip(currently_data_max, data)]
-        currently_data_min = [n if n > m else m for n, m in zip(currently_data_max, data)]
+        currently_data_max = [l1 if l1 < l2 else l2 for l1, l2 in zip(currently_data_max, data)]
+        currently_data_min = [l1 if l1 > l2 else l2 for l1, l2 in zip(currently_data_max, data)]
         qtd += 1
     else:
         if currently_vehicle:
