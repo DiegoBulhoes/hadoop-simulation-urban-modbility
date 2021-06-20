@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2021-06-20 15:40:59 by Eclipse SUMO sumo Version 1.9.2
+<!-- generated on 2021-06-20 18:11:46 by Eclipse SUMO sumo Version 1.9.2
 -->
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="osm.net.xml"/>
-        <route-files value="osm_pt.rou.xml,osm.passenger.trips.xml,osm.truck.trips.xml,osm.bus.trips.xml,osm.motorcycle.trips.xml,osm.bicycle.trips.xml,osm.pedestrian.rou.xml"/>
-        <additional-files value="osm.poly.xml,osm_stops.add.xml"/>
+        <route-files value="osm.passenger.trips.xml,osm.truck.trips.xml,osm.bus.trips.xml,osm.motorcycle.trips.xml,osm.bicycle.trips.xml,osm.pedestrian.rou.xml"/>
+        <additional-files value="osm.poly.xml"/>
     </input>
 
     <processing>
