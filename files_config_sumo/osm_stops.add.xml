@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2021-05-26 08:21:44 by Eclipse SUMO netconvert Version 1.9.2
+<!-- generated on 2021-06-20 15:40:13 by Eclipse SUMO netconvert Version 1.9.2
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -59,4 +59,5 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="8263111146" name="Rodoviária de Campo Grande" lane="205860619_0" startPos="499.38" endPos="190.78" friendlyPos="true"/>
 </additional>
