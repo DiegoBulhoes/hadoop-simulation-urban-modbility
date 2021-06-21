@@ -43,11 +43,11 @@ Segue a leitura desses dados na forma de tabela:
 
 ## Dataset
 
-A simulação foi criada utilizando as ruas e avenidas encontradas perdo da [UFMS](https://www.ufms.br/). Segue a imagem:
+A simulação foi criada utilizando as ruas e avenidas encontradas perto da [UFMS](https://www.ufms.br/). Segue a imagem:
 ![image](./map.png)
 
 O dataset contém as seguintes entidades: carros, caminhões, ônibus, motocicleta, bicicleta e pedestre. As rodas foram
-gerados aleatoriamento com o tempo de simulação máxima de 6000. Segue mais dados da simulação maxima
+gerados aleatoriamento. Segue mais dados da simulação maxima
 
 ```text
 Simulation ended at time: 2864.00
