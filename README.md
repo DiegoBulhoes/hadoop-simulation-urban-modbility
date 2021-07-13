@@ -5,7 +5,7 @@
 [SUMO - Simulation of Urban MObility](https://github.com/eclipse/sumo), é um "pacote" de simulação de tráfego multimodal
 contínuo, microscópico e de código aberto, projetado para lidar com grandes redes.
 
-Nesse repositório tem como objetivo de demonstrar a utilização do Hadoop, Sumo e Python atrves da resolução do problema
+Nesse repositório tem como objetivo de demonstrar a utilização do Hadoop, Sumo e Python através da resolução do problema
 de contabilizar a quantidade de gases emitidos na simulação, calculando a emissão de gases de acordo com o tipo de veículo das
 regiões próximas aos redores da Universidade Federal do Mato Grosso do Sul - UFMS. O script mapper.python está mapeando
 o conjunto de dados necessários para realizar os cálculos que a demonstração propõe, que são:
@@ -22,7 +22,7 @@ o conjunto de dados necessários para realizar os cálculos que a demonstração
 - `vehicle_speed(m/s)`: A velocidade do veículo
 - `vehicle_type`: Tipo do veiculo
 
-O script reducer.py está sumarizando os dados coletados pelo mapper, calculando a média de cada tipo de dado, rasteando
+O script reducer.py está sumarizando os dados coletados pelo mapper, calculando a média de cada tipo de dado, rastreando
 o menor e maior valor. Após a execução é mostrado esses dados no formato csv. Segue o exemplo:
 
 ```text 
@@ -81,7 +81,7 @@ Pedestrian Statistics (avg of 247 walks):
 
 ## Executar o ambiente
 
-O ambiente pode ser executadfo utilizando o [laboratorio na Google Cloud](https://github.com/DiegoBulhoes/lab-hadoop) ou
+O ambiente pode ser executado utilizando o [laboratorio na Google Cloud](https://github.com/DiegoBulhoes/lab-hadoop) ou
 localmente com o [Docker](https://www.docker.com/). Segue o exemplo de um container já
 configurado `https://github.com/DiegoBulhoes/Docker-hadoop`
 
@@ -129,7 +129,21 @@ $HADOOP_HOME/bin/mapred streaming -files mapper.py,reducer.py -mapper mapper.py 
 
 ```shell  
 $HADOOP_HOME/bin/hdfs dfs -get /user/hadoop/output  
+
 ```
+## graficos
+### sobre os gases e rudio
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168222-ade17d00-d445-11eb-9f20-d495a7d33a9a.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168252-b76ae500-d445-11eb-864e-642bbe8bfbdc.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168275-c0f44d00-d445-11eb-8130-b5e0ac52b831.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168299-cb164b80-d445-11eb-92a5-6274e248a7d7.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168329-d49fb380-d445-11eb-9bd8-ab7894afcbc1.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169876-d5394980-d447-11eb-83cc-b084dc699b93.png"></p></a>
+
+### Max, min, mean.
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169376-37457f00-d447-11eb-965e-f69aec487373.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169408-43314100-d447-11eb-9410-63379bdab694.png"></p></a>
+<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169471-5512e400-d447-11eb-96b5-17035525cde3.png"></p></a>
 
 ### Referencias:
 
