@@ -47,7 +47,7 @@ A simulação foi criada utilizando as ruas e avenidas encontradas perto da [UFM
 ![image](./map.png)
 
 O dataset contém as seguintes entidades: carros, caminhões, ônibus, motocicleta, bicicleta e pedestre. As rodas foram
-gerados aleatoriamento. Segue mais dados da simulação maxima
+gerados aleatoriamente. Segue mais dados da simulação máxima
 
 ```text
 Simulation ended at time: 2864.00
@@ -110,7 +110,7 @@ $HADOOP_HOME/bin/hdfs dfs -mkdir /user/hadoop
 - Realizar o upload da lista de modelos de carros
 
 ```shell  
-$HADOOP_HOME/bin/hdfs dfs -put /home/hadoop/input /user/hadoop  
+$HADOOP_HOME/bin/hdfs dfs -put /home/hadoop/emission.csv /user/hadoop  
 ```  
 
 Para exibir a lista basta executar o seguinte comando:
@@ -131,19 +131,6 @@ $HADOOP_HOME/bin/mapred streaming -files mapper.py,reducer.py -mapper mapper.py 
 $HADOOP_HOME/bin/hdfs dfs -get /user/hadoop/output  
 
 ```
-## graficos
-### sobre os gases e rudio
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168222-ade17d00-d445-11eb-9f20-d495a7d33a9a.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168252-b76ae500-d445-11eb-864e-642bbe8bfbdc.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168275-c0f44d00-d445-11eb-8130-b5e0ac52b831.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168299-cb164b80-d445-11eb-92a5-6274e248a7d7.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123168329-d49fb380-d445-11eb-9bd8-ab7894afcbc1.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169876-d5394980-d447-11eb-83cc-b084dc699b93.png"></p></a>
-
-### Max, min, mean.
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169376-37457f00-d447-11eb-965e-f69aec487373.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169408-43314100-d447-11eb-9410-63379bdab694.png"></p></a>
-<a href="https://sumo.dlr.de/docs"><img width=50% src="https://user-images.githubusercontent.com/43382610/123169471-5512e400-d447-11eb-96b5-17035525cde3.png"></p></a>
 
 ### Referencias:
 
